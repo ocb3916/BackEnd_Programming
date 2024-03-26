@@ -1,7 +1,7 @@
 /*
 다음 함수를 만드시오.
 
- 
+
 
 º 함수 이름: power
 
@@ -23,8 +23,8 @@ function power(x, y) {
 
 function multiply() {
     let result = 1
-    for (let i = 0; i < arguments.length; i++) {
-        result *= arguments[i];
+    for (i of arguments) {
+        result *= i;
     }
     return result;
 }

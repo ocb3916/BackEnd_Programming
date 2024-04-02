@@ -7,7 +7,7 @@ function sum(a, b) {
         }
     }
     else {
-        while(a >= b) {
+        while (a >= b) {
             result += a;
             a--;
         }

@@ -6,11 +6,13 @@ function sum(a, b) {
             a++;
         }
     }
-    else
+    else {
         while(a >= b) {
             result += a;
             a--;
         }
+    }
+
     return result;
 }
 

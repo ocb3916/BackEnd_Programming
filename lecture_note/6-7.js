@@ -3,6 +3,9 @@ class Product {
         this.name = name;
         this.weight = weight;
         this.value = value;
+    }
+
+    print() {
         console.log(`${this.name} ${this.weight}g당 ${this.value}원으로 책정.`);
     }
 
@@ -12,4 +15,9 @@ class Product {
 }
 
 let product = new Product("돼지삼겹살", 100, 1690);
+product.print();
 product.calculate(200);
+
+let product1 = new Product("닭고기", 100, 900);
+product1.print();
+product1.calculate(500);

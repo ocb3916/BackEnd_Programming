@@ -8,11 +8,11 @@ const array = [{
     price: 500
 }, {
     name: '바나나',
-    price: 1500
+    price: 400
 }];
 
-const outputA = _.sortBy(array, (item) => item.price);
+const outputA = _.sortBy(array, (item) => {return item.price});
 console.log(outputA);
 
-const outputB = _(array).sortBy((item) => item.name);
+const outputB = _.sortBy(array, (item) => {return item.name})
 console.log(outputB);
